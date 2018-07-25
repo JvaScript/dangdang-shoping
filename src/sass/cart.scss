@@ -1,0 +1,367 @@
+@charset "utf-8";
+@import "_index.scss";
+@import "topNav";
+@import "topNav_search";
+@import "nav";
+*{
+    margin:0;
+    padding:0;
+}
+.clearFix::after{
+    content: "";
+    clear:both;
+    display:block;
+}
+body{
+    font-size: 12px;
+    font-family: "微软雅黑";
+    min-width: 1200px;
+}
+.cart_wrapper{
+    margin:0 auto;
+    width:980px;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration: none;
+    color:#777;
+}
+
+//购物车标题
+//居中
+.cart_header_wrapper{
+    width:980px;
+    margin:0 auto 30px;
+    .cart_header_logo{
+        float: left;
+        margin-top: 30px;
+        img{
+            width: 216px;
+            height: 60px;        
+        }
+    }
+}
+//购物车内容
+.mod_cart_cont{
+    background: #fafafa;
+    border-top: 1px solid#e7e7e7;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.cart_cont_wrapper{
+    margin:0 auto;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    width: 938px;
+    padding: 20px;
+}
+//购物车内容
+.order_page{
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+}
+//购物车标题
+.order_header{
+    height: 38px;
+    line-height: 35px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    position: relative;
+    .order_header_title{
+        height: 98%;
+        margin-right: 30px;
+        float: left;
+        font-size: 16px;
+        color: #3c3c3c;
+        font-weight: normal;
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+        border-bottom: 2px solid #ee394b;
+    }
+    .order_header_btn{
+        height: 22px;
+        line-height: 22px;
+        border: 1px solid #ee394b;
+        border-radius: 2px;
+        background: #ee394b;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        padding: 0 20px;
+        margin:0 10px;
+        font-size: 12px;
+    }
+}
+//购物车为空
+.order_empty{
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 80px;
+    overflow: hidden;
+    text-align: center;
+}
+.order_empty_title{
+    font-size: 18px;
+    color: #3c3c3c;
+    margin-top: 15px;
+}
+.order_empty_txt{
+    margin-top: 10px;
+    display: inline-block;
+    .order_empty_btn{
+        height: 22px;
+        line-height: 22px;
+        border: 1px solid #ee394b;
+        border-radius: 2px;
+        display: inline-block;
+        text-align: center;
+        padding: 0 20px;
+        font-size: 12px;
+        background-color: #feebed;
+        color: #ee394b;
+        border-color: #ee394b;
+    }
+}
+//购物车不为空
+.order_list_box{
+
+}
+//名称 价格 数量
+.order_list_title{
+    table-layout: fixed;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border-collapse: collapse;
+    border: 1px solid #e7e7e7;
+    background: #f7f7f7;
+    border-spacing: 0;
+    th{
+        font-weight: normal;
+    }
+    //全选
+    .cart_select_all{
+        width:100px;
+    }
+    //商品信息
+    .cart_product_name{
+        width:400px;
+    }
+    //价格
+    .cart_price{
+        width:180px;
+    }
+    //数量
+    .cart_product_num{
+        width:100px;
+    }
+    //商品操作
+    .cart_del{
+        width:100px;
+    }
+}
+//商品详细信息
+.order_list_cont{
+    @extend .order_list_title;
+    margin-top:10px;
+    tr{
+        display:block;
+        margin:10px auto;
+    }
+}
+tr{
+    //background: #fff7f7;
+}
+//商品信息
+.cart_product_detail{
+    text-align: left;
+    width:450px;
+    .product_img{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        vertical-align: top;
+        float: left;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    //商品链接和商品种类
+    .product_info{
+        overflow: hidden;
+        font-size: 12px;
+        position: relative;
+        height: 80px;
+        width:290px;
+        .product_link{
+            line-height: 14px;
+            height: 28px;
+            margin-bottom: 4px;
+            a{
+                color: #3c3c3c;
+                display: inline-block;
+            }
+        }
+        .product_type{
+            color: #999;
+            .product_type_txt{
+                max-height: 30px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+//数量
+.product_num_box{
+    background: #fff0e7;
+    border: 1px solid #ffe1d3;
+    width: 90px;
+    height: 56px;
+    padding-top: 4px;
+    margin: 0 auto;
+    .product_num_choose{
+        background: #fff;
+        display: inline-block;
+        height: 30px;
+        .num_input{
+            width: 58px;
+            height: 28px;
+            margin-right: 2px;
+            border: 1px solid #999;
+            text-align: center;
+            font-size: 12px;
+            color: #3c3c3c;
+            outline: 0;
+            vertical-align: top;
+        }
+        .num_btn{
+            display: inline-block;
+            width: 20px;
+            height: 30px;
+            vertical-align: top;
+            line-height: 20px;
+            font-size: 0;
+            span{
+                display: inline-block;
+                width: 20px;
+                height: 14px;
+                background-image: url(http://www.qiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+                background-repeat: no-repeat;
+                vertical-align: top;
+                cursor: pointer;
+                float: left;
+            }
+            .num_increase{
+                background-position: -160px -22px;
+                margin-bottom: 2px;
+            }
+            .num_decrease{
+                background-position: -180px -22px;
+            }
+        }
+    }
+    .num_forSale{
+        display:inline-block;
+        background: 0;
+        text-align: center;
+        color: #f66a11;
+        overflow: hidden;
+        height: 20px;
+        line-height: 12px;
+    }
+}
+//价格
+.cart_price{
+    .product_price{
+        font-size: 18px;
+        color: #ee394b;
+        font-style: normal;
+    }
+}
+//商品操作
+.cart_del{
+    .product_del{
+
+    }
+}
+//底部结账栏
+.checkout_box{
+    table-layout: fixed;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border-collapse: collapse;
+    border: 1px solid #e7e7e7;
+    background: #f7f7f7;
+    border-spacing: 0;
+    margin-top:10px;
+    th{
+        font-weight: normal;
+    }
+    .cart_select_all{
+        width:100px;
+    }
+    .del_select_box{
+        width:150px;
+    }
+    .clear_cart_box{
+        width:300px;
+    }
+    .already_choose_box{
+        width:100px;
+        .already_choose{
+            font-style: normal;
+            color: #ee394b;
+            font-weight: 700;
+        }
+    }
+    .sum_price_box{
+        width:150px;
+        em{
+            font-size: 18px;
+            font-style: normal;
+            color: #ee394b;
+            font-weight: 700;
+        }
+    }
+    .checkout_btn_box{
+        .checkout_btn{
+            display: inline-block;
+            width: 120px;
+            height: 38px;
+            background: #ee394b;
+            border: 1px solid #ee394b;
+            border-radius: 3px;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            color: #fff;
+            font-size: 18px;
+            line-height: 38px;
+            text-align: center;
+        }
+    }
+}
+
+//返回顶部
+.goto_top_box{
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    z-index: 10;
+    width: 36px;
+    height:36px;
+    .goto_top{
+        display: block;
+        width: 36px;
+        height: 36px;
+        background-image: url(http://www.qiyipic.com/common/fix/h5_qiyiShop_img/baseRedScrollBar.png);
+        background-position: -50px -46px;
+    }
+    .goto_top:hover{
+        background-position: -50px -128px;
+    }
+}

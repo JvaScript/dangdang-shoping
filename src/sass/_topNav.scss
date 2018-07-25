@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+$wrap:1200px;
+// 顶部导航栏
+//1200px居中盒子
+.wrapper{
+    width:$wrap;
+    margin-left:auto;
+    margin-right:auto;
+}
+//清除浮动
+.clear::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+a{//去a标签默认样式
+    //display:block;
+    text-decoration: none;
+    color:#999;
+}
+li{
+    list-style: none;
+}
+%left{//左浮动
+    float:left;
+}
+%right{//右浮动
+    float:right;
+}
+
+.header_log{
+    @extend %left;
+    display: inline-block;
+    margin-top: 30px;
+    img{
+        width: 216px;
+        height: 60px;
+    }
+}
+.header_search{
+    @extend %left;
+    padding-left: 154px;
+    margin-top: 37px;
+    width: 510px;
+    .search_pannel{
+        border: 1px solid #ee394b;
+        height: 34px;
+        position: relative;
+        z-index: 3000;
+        .search_text{
+            width: 396px;
+            border: 0;
+            background: #fff;
+            font-size: 12px;
+            padding-left: 10px;
+            height: 14px;
+            line-height: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            outline: 0;
+            @extend %left;
+        }
+        .search_btn{
+            width: 100px;
+            color: #fff;
+            border: 0;
+            background: #eb3b4a;
+            font-size: 20px;
+            height: 34px;
+            margin: 0;
+            float: right;
+            font-family: "微软雅黑";
+            outline: 0;
+        }
+        .suggest_box{
+            position: absolute;
+            top: 35px;
+            left: -1px;
+            border: 1px solid #ee394b;
+            border-top:0;
+            width: 419px;
+            background: #fff;
+            z-index: 200;
+            font-size: 12px;
+            font-family: "微软雅黑";
+            display:none;
+        }
+        .suggest_li{
+            height: 30px;
+            line-height: 30px;
+        }
+        .suggest_li:hover{
+            background:#ccc;
+        }
+        .suggest_link{
+            padding: 0 10px;
+            height: 30px;
+            font-weight: bold;
+            color: #3c3c3c;
+            display: block;
+            overflow: hidden;
+            
+        }
+        .suggest_linkL{
+            float: left;
+            display: inline-block;
+            width: 320px;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .suggest_linkR{
+            float: right;
+            color: #999;
+            font-weight: normal;
+        }
+    }
+    .hot{
+        color:#ee394b;
+    }
+    .hot_cutline{
+        @extend %left;
+        margin-top: 3px 0 0 0;
+        display: inline-block;
+        overflow: hidden;
+        height: 8px;
+        border-left: 1px solid #e5e5e5;
+    }
+    .search_hot{
+        height: 14px;
+        line-height: 14px;
+        overflow: hidden;
+        padding-top: 10px;
+        color: #c7c7c7;
+        margin-left: -8px;
+        a{
+            margin: 0 10px;
+            @extend %left;
+            font-size:12px;
+            font-family: Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+        }
+    }
+}
+//右侧广告
+.header_right{
+    @extend %right;
+    margin-top: 30px;
+    font-family: 'Microsoft YaHei';
+    .active{
+        display:block !important;
+    }
+    .header_right_ad{
+        @extend %right;
+        width: 160px;
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        li{
+            display:none;
+            float: right;
+            width: 160px;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            img{
+                @extend %left;
+                margin-right: 10px;
+                width:50px;
+                height:50px;
+            }
+        }
+        p{
+            @extend %left;
+            width: 100px;
+            line-height: 20px;
+            padding: 5px 0;
+        }
+        b{
+            display: block;
+            color: #999;
+            font-weight: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;;
+            font-size:12px;
+        }
+        span{
+            display: block;
+            width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #666;
+            cursor: pointer;
+            font-size:12px;
+        }
+    }
+    .arrow_items{
+        @extend %right;
+        margin: 31px 0 0 10px;
+        width: 39px;
+        height: 19px;
+        background: url(http://pic0.qiyipic.com/common/20150714/arrow2.gif) no-repeat;
+        span{
+            @extend %left;
+            width: 19px;
+            height: 19px;
+            cursor: pointer;
+        }
+    }
+}

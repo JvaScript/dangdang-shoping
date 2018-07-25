@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<!-- 顶部整体 -->
+<div class="mod_topMenu">
+    <!--  顶部居中 -->
+    <div class="wrapper">
+        <!--  顶部导航 -->
+        <div class="topNav">
+            <!--  顶部导航_左 -->
+            <div class="topNav_left">
+                <!--  登陆后显示用户菜单 -->
+                <div class="topNav_left_user">
+                    <!--  用户名 -->
+                    <a class="topNav_left_username" href="">
+                        <span></span>
+                        <i class="topNav_icon"></i>
+                    </a>
+                    <!--  用户详情 -->
+                    <div class="topNav_left_userMenu">
+                        <a class="user_avatar" href="javascript:;">
+                            <!--  头像 -->
+                            <img src="http://www.qiyipic.com/common/fix/headicons/male-70.png" alt="">
+                        </a>
+                        <div class="user_detail">
+                            <p class="user_operate">
+                                <a href="javascript:;">账号管理</a>
+                                <span>|</span>
+                                <a href="javascript:;">退出</a>
+                            </p>
+                            <p>
+                                <a href="javascript:;" class="login_username">123</a>
+                            </p>
+                            <p class="user_vip">
+                                <i class="user_vip_icon"></i>
+                                <i class="user_novip_icon"></i>
+                                <span>VIP会员</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <span>欢迎来到爱奇艺商城</span>
+                <!--  登陆注册按钮 -->
+                <div class="topNav_left_login">
+                    <a class="topNav_login" href="signin&signup.html?type=signin">请登录</a>
+                    <a class="topNav_signUp" href="signin&signup.html?type=signup">免费注册</a>
+                </div>
+            </div>
+            <!--  顶部导航_右 -->
+            <div class="topNav_right">
+                <div class="topNav_cart">
+                    <a class="topNav_cart_link" href="cart.html">
+                        <i class="topNav_cart_icon topNav_icon"></i>
+                        <span class="topNav_cart_text">
+                            购物车<i class="topNav_cart_num">0</i>件
+                        </span>
+                    </a>
+                </div>
+                <div class="topNav_orders">
+                    <a class="topNav_orders_link" href="javascript:;">
+                        <i class="topNav_orders_icon topNav_icon"></i>
+                        <span class="topNav_orders_text">买家中心</span>
+                    </a>
+                </div>
+                <div class="topNav_favorites">
+                    <a class="topNav_favorites_link" href="javascript:;">
+                        <i class="topNav_favorites_icon topNav_icon"></i>
+                        <span class="topNav_favorites_text">我的收藏</span>
+                    </a>
+                </div>
+                <div class="top_cutline"></div>
+                <div class="topNav_follow">
+                    <a class="topNav_follow_link" href="javascript:;">
+                        <i class="topNav_follow_iconL topNav_icon"></i>
+                        <span class="topNav_follow_text">关注我们</span>
+                        <i class="topNav_follow_iconR topNav_icon"></i>
+                        <div class="topNav_follow_box">
+                            <div class="topNav_follow_boxL">
+                                <img src="http://www.qiyipic.com/common/fix/myCenter_images/mall_qrcodeNew.jpg" alt="">
+                            </div>
+                            <div class="topNav_follow_boxR">
+                                <p>微信扫一扫</p>
+                                <p>了解商城动态</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="top_cutline"></div>
+                <div class="topNav_business">
+                    <a class="topNav_business_link" href="javascript:;">
+                        <i class="topNav_business_icon topNav_icon"></i>
+                        <span class="topNav_business_text">商家中心</span>
+                    </a>
+                </div>
+                <div class="top_cutline"></div>
+                <div class="topNav_index">
+                    <a class="topNav_index_link" href="index.html">
+                        <span class="topNav_index_text">爱奇艺首页</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 购物车标题 -->
+<div class="mod_cart_header clearFix">
+    <div class="cart_header_wrapper clearFix">
+        <div class="cart_header_logo">
+            <h1>
+                <a href="index.html">
+                    <img src="https://www.qiyipic.com/common/fix/myCenter_images/logo1126.png" alt="爱奇艺商城">
+                </a>
+            </h1>
+        </div>
+    </div>
+</div>
+<!-- 购物车内容 -->
+<div class="mod_cart_cont">
+    <div class="cart_cont_wrapper">
+        <!-- 购物车内容 -->
+        <div class="order_page">
+            <!-- 购物车标题 -->
+            <div class="order_header">
+                <h1 class="order_header_title">我的购物车</h1>
+                <div class="order_header_info">
+                    <a href="signin&signup.html?type=signin" class="order_header_btn">登录</a>
+                    <span class="username"></span>
+                </div>
+            </div>
+            <!-- 购物车为空时显示 -->
+            <div class="order_empty">
+                <div class="order_empty_cont">
+                    <div class="order_empty_title">
+                        您的购物车没有添加商品哦
+                    </div>
+                    <div class="order_empty_txt">
+                        <a href="index.html" class="order_empty_btn">去首页</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 购物车不为空 -->
+            <div class="order_list_box">
+                <!-- 名称 价格 数量 -->
+                <table class="order_list_title">
+                    <tr>
+                        <th class="cart_select_all">
+                            <input type="checkbox" checked class="all" name="" id="">
+                            <span>全选</span>
+                        </th>
+                        <th class="cart_product_name">商品信息</th>
+                        <th class="cart_product_num">数量</th>
+                        <th class="cart_price">价格</th>
+                        <th class="cart_del">商品操作</th>
+                    </tr>
+                </table>
+                <!-- 商品详细信息 -->
+                <table class="order_list_cont">
+                    <!-- <tr>
+                        <th class="cart_select_all">
+                            <input type="checkbox" name="" id="">
+                        </th>
+                        <th class="cart_product_detail">
+                            商品预览图
+                            <a href="javascript:;" class="product_img">
+                                <img src="https://mall5.qiyipic.com/mall/20180309/d3/4d/mall_5aa239bd14d4557a7775d34d_80_80.jpg" alt="">
+                            </a>
+                            商品链接和商品种类
+                            <div class="product_info">
+                                <div class="product_link">
+                                    <a href="javascript:;">【买就送手柄】爱奇艺i71定制VR-MAX4蓝光VR眼镜4代自带耳机</a>
+                                </div>
+                                <div class="product_type">
+                                    <span class="product_type_txt">颜色: 黑色送手柄</span>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="cart_product_num">
+                            <div class="product_num_box">
+                                <span class="product_num_choose">
+                                    <input type="text" value="1" maxlength="8" class="num_input">
+                                    没有足够货物添加num_increase_no 和 num_decrease_no 类
+                                    <span class="num_btn">
+                                        <span class="num_increase"></span>
+                                        <span class="num_decrease num_decrease_no"></span>
+                                    </span>
+                                </span>
+                                <span class="num_forSale">库存2345件</span>
+                            </div>
+                        </th>
+                        <th class="cart_price">
+                            <div class="product_price_box">
+                                <em class="product_price">219</em>
+                            </div>
+                        </th>
+                        <th class="cart_del">
+                            <div class="product_del_box">
+                                <a href="javascript:;" class="product_del">删除</a>
+                            </div>
+                        </th>
+                    </tr> -->
+                </table>
+                <!-- 底部结账栏 -->
+                <table class="checkout_box">
+                    <tr>
+                        <th class="cart_select_all">
+                            <input type="checkbox" checked class="all" name="" id="">
+                            <span>全选</span>
+                        </th>
+                        <th class="del_select_box">
+                            <a href="javascript:;" class="del_select">删除选中的商品</a>
+                        </th>
+                        <th class="clear_cart_box">
+                            <a href="javascript:;" class="clear_cart">清空购物车</a>
+                        </th>
+                        <th class="already_choose_box">
+                            <span>已选商品<em class="already_choose">2</em>件</span>
+                        </th>
+                        <th class="sum_price_box">
+                            <span>
+                                合计：
+                                <em>¥</em>
+                                <em class="sum_price">
+                                    219
+                                </em>
+                            </span>
+                        </th>
+                        <th class="checkout_btn_box">
+                            <a href="javascript:;" class="checkout_btn">结算</a>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部链接 -->
+<div class="footer_links"></div>
+
+<!-- 返回顶部按钮 -->
+<div class="goto_top_box">
+    <a href="javascript:;" class="goto_top" title="回顶部"></a>
+</div>
+<script src="script/thirdplugins/jquery.min.js"></script>
+<script src="script/thirdplugins/jquery.cookie.js"></script>
+<script src="script/js/index.js"></script>
+<script src="script/js/get_data.js"></script>
+<script src="script/thirdplugins/jquery.cookie.js"></script>
+<script src="script/js/cart.js"></script>
+</body>
+</html>

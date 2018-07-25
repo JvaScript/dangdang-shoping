@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/details.css">
+</head>
+<body>
+    <!-- 顶部整体 -->
+    <div class="mod_topMenu">
+            <!--  顶部居中 -->
+            <div class="wrapper">
+                <!--  顶部导航 -->
+                <div class="topNav">
+                    <!--  顶部导航_左 -->
+                    <div class="topNav_left">
+                        <!--  登陆后显示用户菜单 -->
+                        <div class="topNav_left_user">
+                            <!--  用户名 -->
+                            <a class="topNav_left_username" href="">
+                                <span></span>
+                                <i class="topNav_icon"></i>
+                            </a>
+                            <!--  用户详情 -->
+                            <div class="topNav_left_userMenu">
+                                <a class="user_avatar" href="javascript:;">
+                                    <!--  头像 -->
+                                    <img src="http://www.qiyipic.com/common/fix/headicons/male-70.png" alt="">
+                                </a>
+                                <div class="user_detail">
+                                    <p class="user_operate">
+                                        <a href="javascript:;">账号管理</a>
+                                        <span>|</span>
+                                        <a href="javascript:;">退出</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:;" class="login_username">123</a>
+                                    </p>
+                                    <p class="user_vip">
+                                        <i class="user_vip_icon"></i>
+                                        <i class="user_novip_icon"></i>
+                                        <span>VIP会员</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <span>欢迎来到爱奇艺商城</span>
+                        <!--  登陆注册按钮 -->
+                        <div class="topNav_left_login">
+                            <a class="topNav_login" href="signin&signup.html?type=signin">请登录</a>
+                            <a class="topNav_signUp" href="signin&signup.html?type=signup">免费注册</a>
+                        </div>
+                    </div>
+                    <!--  顶部导航_右 -->
+                    <div class="topNav_right">
+                        <div class="topNav_cart">
+                            <a class="topNav_cart_link" href="cart.html">
+                                <i class="topNav_cart_icon topNav_icon"></i>
+                                <span class="topNav_cart_text">
+                                    购物车<i class="topNav_cart_num">0</i>件
+                                </span>
+                            </a>
+                        </div>
+                        <div class="topNav_orders">
+                            <a class="topNav_orders_link" href="javascript:;">
+                                <i class="topNav_orders_icon topNav_icon"></i>
+                                <span class="topNav_orders_text">买家中心</span>
+                            </a>
+                        </div>
+                        <div class="topNav_favorites">
+                            <a class="topNav_favorites_link" href="javascript:;">
+                                <i class="topNav_favorites_icon topNav_icon"></i>
+                                <span class="topNav_favorites_text">我的收藏</span>
+                            </a>
+                        </div>
+                        <div class="top_cutline"></div>
+                        <div class="topNav_follow">
+                            <a class="topNav_follow_link" href="javascript:;">
+                                <i class="topNav_follow_iconL topNav_icon"></i>
+                                <span class="topNav_follow_text">关注我们</span>
+                                <i class="topNav_follow_iconR topNav_icon"></i>
+                                <div class="topNav_follow_box">
+                                    <div class="topNav_follow_boxL">
+                                        <img src="http://www.qiyipic.com/common/fix/myCenter_images/mall_qrcodeNew.jpg" alt="">
+                                    </div>
+                                    <div class="topNav_follow_boxR">
+                                        <p>微信扫一扫</p>
+                                        <p>了解商城动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="top_cutline"></div>
+                        <div class="topNav_business">
+                            <a class="topNav_business_link" href="javascript:;">
+                                <i class="topNav_business_icon topNav_icon"></i>
+                                <span class="topNav_business_text">商家中心</span>
+                            </a>
+                        </div>
+                        <div class="top_cutline"></div>
+                        <div class="topNav_index">
+                            <a class="topNav_index_link" href="index.html">
+                                <span class="topNav_index_text">爱奇艺首页</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- logo和搜索框 -->
+    <div class="mod_logo">
+        <div class="wrapper">
+            <!-- log -->
+            <div class="header_log">
+                <h1>
+                    <a href="index.html">
+                        <img src="http://www.qiyipic.com/common/fix/myCenter_images/logo1126.png" alt="">
+                    </a>
+                </h1>
+            </div>
+            <!-- 搜索框 -->
+            <div class="header_search">
+                <div class="search_pannel">
+                    <form action="" method="get">
+                        <input type="text" class="search_text" placeholder="爱奇艺定制 i71">
+                        <input type="button" class="search_btn" value="搜索">
+                        <div class="suggest_box">
+                            <ul class="suggest_list">
+                                <!-- <li class="suggest_li">
+                                    <a href="javascript:;" class="suggest_link">
+                                        <span class="suggest_linkL">123</span>
+                                        <span class="suggest_linkR">约41个商品</span>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="search_hot">
+                    <!-- <a href="javascript:;" class="hot">凉席三件套</a>
+                    <div class="hot_cutline"></div>
+                    <a href="javascript:;">T恤</a>
+                    <div class="hot_cutline"></div>
+                    <a href="javascript:;" class="hot">VR眼镜</a>
+                    <div class="hot_cutline"></div>
+                    <a href="javascript:;" class="hot">迷你风扇</a>
+                    <div class="hot_cutline"></div>
+                    <a href="javascript:;">耳机</a>
+                    <div class="hot_cutline"></div>
+                    <a href="javascript:;">书籍</a>
+                    <div class="hot_cutline"></div>
+                    <a href="javascript:;">kindle</a>
+                    <div class="hot_cutline"></div>
+                    <a href="javascript:;" class="hot">辣条</a>
+                    <div class="hot_cutline"></div>
+                    <a href="javascript:;">儿童玩具</a> -->
+                </div>
+            </div>
+            <!-- 右侧广告 -->
+            <div class="header_right">
+                <!-- 广告箭头 -->
+                <div class="arrow_items">
+                    <span class="ad_arrowL"></span>
+                    <span class="ad_arrowR"></span>
+                </div>
+                <!-- 广告切换 -->
+                <ul class="header_right_ad">
+                    <!-- <li class="active">
+                        <a href="javascript:;">
+                            <img src="https://pic0.qiyipic.com/common/20170329/f749f3c25fec4876954d57faa49acd42.jpg" alt="">
+                            <p>
+                                <b>爱奇艺VR眼镜</b>
+                                <span>带你阅片悦到嗨</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="https://pic3.qiyipic.com/common/20180223/cb21b43a3c864f81b77f167fc5908860.jpg" alt="">
+                            <p>
+                                <b>原创潮流</b>
+                                <span>论潮流就服i71</span>
+                            </p>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 导航条 -->
+    <div class="mod-nav">
+        <div class="wrapper">
+            <div class="nav">
+                <!-- 全部商品分类 -->
+                <div class="all_type">
+                    <a href="javascript:;" class="show_type_list">
+                        <i class="typeL_icon"></i>
+                        <span>全部商品分类</span>
+                        <i class="typeR_icon"></i>
+                    </a>
+                    <!-- 二级导航 -->
+                    <div class="type_list_box">
+                        <ul class="type_list">
+                            <li>
+                                <a href="javascript:;" class="type_title">
+                                    <i class="type_icon type_icon_cam"></i>
+                                    数码
+                                </a>
+                                <div class="type_item_box">
+                                    <div class="type_item">
+                                        <a href="javascript:;" class="item">电视果</a>
+                                        <a href="javascript:;" class="item">爱奇艺自营</a>
+                                        <a href="javascript:;" class="item">VR眼镜</a>
+                                        <a href="javascript:;" class="item">耳机/耳麦</a>
+                                        <a href="javascript:;" class="item">智能穿戴</a>
+                                        <a href="javascript:;" class="item">移动电源</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="type_title">
+                                    <i class="type_icon type_icon_movie"></i>
+                                    IP周边
+                                </a>
+                                <div class="type_item_box">
+                                    <div class="type_item">
+                                        <a href="javascript:;" class="item">电视果</a>
+                                        <a href="javascript:;" class="item">爱奇艺自营</a>
+                                        <a href="javascript:;" class="item">VR眼镜</a>
+                                        <a href="javascript:;" class="item">耳机/耳麦</a>
+                                        <a href="javascript:;" class="item">智能穿戴</a>
+                                        <a href="javascript:;" class="item">移动电源</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="type_title">
+                                    <i class="type_icon type_icon_book"></i>
+                                    书籍
+                                </a>
+                                <div class="type_item_box">
+                                    <div class="type_item">
+                                        <a href="javascript:;" class="item">电视果</a>
+                                        <a href="javascript:;" class="item">爱奇艺自营</a>
+                                        <a href="javascript:;" class="item">VR眼镜</a>
+                                        <a href="javascript:;" class="item">耳机/耳麦</a>
+                                        <a href="javascript:;" class="item">智能穿戴</a>
+                                        <a href="javascript:;" class="item">移动电源</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="type_title">
+                                    <i class="type_icon type_icon_drink"></i>
+                                    食品饮料
+                                </a>
+                                <div class="type_item_box">
+                                    <div class="type_item">
+                                        <a href="javascript:;" class="item">电视果</a>
+                                        <a href="javascript:;" class="item">爱奇艺自营</a>
+                                        <a href="javascript:;" class="item">VR眼镜</a>
+                                        <a href="javascript:;" class="item">耳机/耳麦</a>
+                                        <a href="javascript:;" class="item">智能穿戴</a>
+                                        <a href="javascript:;" class="item">移动电源</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="type_title">
+                                    <i class="type_icon type_icon_home"></i>
+                                    生活居家
+                                </a>
+                                <div class="type_item_box">
+                                    <div class="type_item">
+                                        <a href="javascript:;" class="item">电视果</a>
+                                        <a href="javascript:;" class="item">爱奇艺自营</a>
+                                        <a href="javascript:;" class="item">VR眼镜</a>
+                                        <a href="javascript:;" class="item">耳机/耳麦</a>
+                                        <a href="javascript:;" class="item">智能穿戴</a>
+                                        <a href="javascript:;" class="item">移动电源</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="type_title">
+                                    <i class="type_icon type_icon_toy"></i>
+                                    动漫玩具
+                                </a>
+                                <div class="type_item_box">
+                                    <div class="type_item">
+                                        <a href="javascript:;" class="item">电视果</a>
+                                        <a href="javascript:;" class="item">爱奇艺自营</a>
+                                        <a href="javascript:;" class="item">VR眼镜</a>
+                                        <a href="javascript:;" class="item">耳机/耳麦</a>
+                                        <a href="javascript:;" class="item">智能穿戴</a>
+                                        <a href="javascript:;" class="item">移动电源</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 导航栏中间 -->
+                <ul class="nav_box">
+                    <li class="nav_active">
+                        <a href="javascript:;">首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">秒杀</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">京东优选</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">i71</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Apple</a>
+                    </li>
+                </ul>
+                <!-- 导航栏VIP提示框 -->
+                <div>
+                    <div class="showVip_box">
+                        <p class="showVip_title">
+                            全场购买即享
+                            <br>
+                            爱奇艺VIP会员体验
+                        </p>
+                        <p class="showVip_btn">
+                            活动规则
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 商品详情页 -->
+    <div class="mod_main">
+        <div class="wrapper">
+            <!-- 商品路径 -->
+            <div class="shop_addr">
+                <a href="index.html" class="shop_addr_index">首页</a>
+                <i class="shop_addr_i">></i>
+                <span class="shop_addr_name">
+                    <!-- 爱奇艺i71 MagicVR 3D虚拟现实智能眼镜QY-701 -->
+                </span>
+            </div>
+            <!-- 商品详情 -->
+            <div class="product_box clearFix">
+                <!-- 放大镜 -->
+                <div class="scale">
+                    <!-- 上面大图 -->
+                    <div class="scale_pic">
+                        <div class="scale_pic_small">
+                            <img src="" alt="">
+                            <span class="pic_zoom"></span>
+                        </div>
+                        <div class="scale_pic_big">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <!-- 下面小图 -->
+                    <div class="pic_list_box">
+                        <div class="pic_list_cont">
+                            <ul class="pic_list">
+                                <li class="select">
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品详细信息 -->
+                <div class="product_detail">
+                    <h3 class="detail_title">
+                        <!-- 爱奇艺i71 MagicVR 3D虚拟现实智能眼镜QY-701 -->
+                    </h3>
+                    <strong class="detail_subtitle">
+                        <!-- i71VR 限时抢购 高清智能VR眼镜 足不出户 带您仗剑走天涯 -->
+                    </strong>
+                    <!-- 价格 -->
+                    <div class="detail_price">
+                        <div class="price_item">
+                            <label class="price_label">价&nbsp;&nbsp;格：</label>
+                            <span class="price_now">
+                                <em class="yen">¥</em>
+                                <strong class="price">
+                                    <!-- 79 -->
+                                </strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 销量 -->
+                    <ul class="detail_sale">
+                        <li class="detail_sale_cont">
+                            <a href="javascript:;" class="sale_label">
+                                <i class="sale_icon"></i>
+                                销量：
+                                <span class="sale_num">
+                                    <!-- 3948 -->
+                                </span>
+                            </a>
+                        </li>
+                        <li class="detail_comment_cont">
+                            <a href="javascript:;" class="comment_label" id="comment_label">
+                                <i class="comment_icon"></i>
+                                评价：
+                                <span class="comment_num">
+                                    <!-- 250 -->
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 地址,库存 -->
+                    <div class="detail_choose">
+                        <div class="detail_choose_cont">
+                            <form action="" method="post">
+                                <div class="detail_info clearFix">
+                                    <!-- 运费 -->
+                                    <div class="delivery">
+                                        <label class="detail_label">运费：</label>
+                                        <span class="deliveryFrom">
+                                            <!-- 江苏苏州市 -->
+                                        </span>
+                                        <span class="and">至</span>
+                                        <span class="deliveryTo">
+                                            <!-- 杭州市 -->
+                                        </span>
+                                        <span class="deliveryPrice">快递：
+                                            <!-- 29.8 -->
+                                        </span>
+                                    </div>
+                                    <!-- 类型选择 -->
+                                    <div class="detail_pick">
+                                        <label class="detail_label">颜色：</label>
+                                        <div class="detail_pick_box clearFix">
+                                            <ul class="detail_pick_list clearFix">
+                                                <!-- <li>
+                                                    <a href="javascript:;" class="pick_link pick_choose"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" class="pick_link"></a>
+                                                </li> -->
+                                                <span class="type_no">
+                                                    <!-- 请选择类型 -->
+                                                </span>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 商品库存 -->
+                                    <div class="detail_amount_box clearFix">
+                                        <label class="detail_label">数量：</label>
+                                        <span class="choose_amount">
+                                            <input type="number" value="1" maxlength="8" class="amount_input">
+                                            <span class="amount_btn">
+                                                <span class="amount_increase"></span>
+                                                <span class="amount_decrease"></span>
+                                            </span>
+                                            <span class="amount_forSale">
+                                                <!-- 库存2345件 -->
+                                            </span>
+                                            <span class="amount_no">
+                                                <!-- 库存不足 -->
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <!-- 立即购买,加入购物车 -->
+                                    <div class="detail_submit_btn">
+                                        <a href="javascript:;" class="submit_btn btn_buy">立即购买</a>
+                                        <a href="javascript:;" class="submit_btn btn_cart">
+                                            <i class="btn_cart_icon"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <!-- 服务承诺 -->
+                                    <div class="detail_service">
+                                        <ul class="detail_service_list">
+                                            <li class="service_label">服务承诺：</li>
+                                            <li>
+                                                <i class="service_icon"></i>
+                                                <span class="service_info">爱奇艺电商</span>
+                                            </li>
+                                            <li>
+                                                <i class="service_icon"></i>
+                                                <span class="service_info">极速发货</span>
+                                            </li>
+                                            <li>
+                                                <i class="service_icon"></i>
+                                                <span class="service_info">正品保证</span>
+                                            </li>
+                                            <li>
+                                                <i class="service_icon"></i>
+                                                <span class="service_info">七天无理由</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="toolbar">
+        <!-- 顶部空隙 -->
+        <div class="toolbar_top"></div>
+        <!-- 中部购物车 -->
+        <ul class="toolbar_ul">
+            <li>
+                <a href="javascript:;" class="toolbar_ul_link"></a>
+            </li>
+            <li class="toolbar_cart">
+                <a href="javascript:;" class="toobar_cart_link">
+                    <i class="cart_icon"></i>
+                    <span class="cart_info">购物车</span>
+                    <span class="cart_num">0</span>
+                </a>
+            </li>
+        </ul>
+        <!-- 底部 -->
+        <ul class="toolbar_bottom">
+            <li class="totop">
+                <a href="javascript:;" class="totop_link">
+                    <i class="totop_icon"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script/js/get_data.js"></script>
+    <script src="script/js/index.js"></script>
+    <script src="script/js/details.js"></script>
+    <script src="script/thirdplugins/jquery.cookie.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signin&signup.css">
+</head>
+<body>
+    <!-- 注册页面 -->
+    <div class="signup_box">
+        <!-- 注册页面标题 -->
+        <div class="register_title">
+            <div class="register_title_cont">
+                <a href="javascript:;" class="goto_signin">账号登录</a>
+                <div class="iqiyi_logo">
+                    <a href="index.html" class="iqiyi_logo_link"></a>
+                </div>
+                <div class="iqiyi_logo_title">
+                    <h2>免费注册</h2>
+                </div>
+            </div>
+        </div>
+        <!-- 注册页面内容 -->
+        <div class="register_cont">
+            <div class="register_nav">
+                <div class="register_nav_cont">
+                    <span class="register_nav_text">请填写以下信息</span>
+                </div>
+            </div>
+            <div class="register_frame">
+                <div class="register_frame_cont">
+                    <div class="info_container register_username onfocus">
+                        <span class="info_title">用户名</span>
+                        <p class="error_info">
+                            <span>
+                                <!-- 用户名格式不正确 -->
+                            </span>
+                        </p>
+                        <input type="text" class="input_box" name="signup_name" id="signup_name" placeholder="请输入用户名">
+                    </div>
+                    <div class="info_container register_password">
+                        <span class="info_title">密码</span>
+                        <p class="error_info">
+                            <span>
+                                <!-- 密码格式不正确 -->
+                            </span>
+                        </p>
+                        <input type="password" class="input_box" name="signup_pass" id="signup_pass" placeholder="请输入密码">
+                    </div>
+                    <div class="info_container register_repass">
+                        <span class="info_title">确认密码</span>
+                        <p class="error_info">
+                            <span>
+                                <!-- 两次输入的密码不一致 -->
+                            </span>
+                        </p>
+                        <input type="password" class="input_box" name="signup_repass" id="signup_repass" placeholder="请确认密码">
+                    </div>
+                    <div class="info_container register_email">
+                        <span class="info_title">邮箱</span>
+                        <p class="error_info">
+                            <span>
+                                <!-- 邮箱格式不正确 -->
+                            </span>
+                        </p>
+                        <input type="text" class="input_box" name="signup_email" id="signup_email" placeholder="请输入邮箱">
+                    </div>
+                    <div class="info_agree">
+                        点击注册即表示您同意
+                        <a href="http://www.iqiyi.com/user/register/protocol.html">《用户协议》</a>
+                        <a href="http://www.iqiyi.com/common/secret.html">《隐私政策》</a>
+                    </div>
+                    <a href="javascript:;" class="btn_register btn_gray">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登陆页面 -->
+    <div class="signin_box">
+        <!-- 登陆页面标题 -->
+        <div class="signin_title">
+            <div class="signin_title_cont">
+                <div class="signin_iqiyi_logo">
+                    <a href="index.html" class="iqiyi_logo_link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="signin_cont">
+            <div class="signin_frame">
+                <div class="signin_frame_top">
+                    <div class="signin_frame_top_cont">
+                        <h2 class="signin_frame_title">登录</h2>
+                        <div class="info_container signin_username">
+                            <span class="info_title">用户名</span>
+                            <p class="error_info">
+                                <span>
+                                    <!-- 用户名应为3-15位字母或数字 -->
+                                </span>
+                            </p>
+                            <input type="text" class="input_box" name="signin_name" id="signin_name" placeholder="请输入用户名">
+                        </div>
+                        <div class="info_container signin_password">
+                            <p class="error_info">
+                                <span>
+                                    <!-- 密码应为6-20位 -->
+                                </span>
+                            </p>
+                            <div class="signin_password_container">
+                                <!-- 显示密码type变成text -->
+                                <input type="password" class="input_box input_pass_box" name="signin_pass" id="signin_pass" placeholder="请输入密码">
+                            </div>
+                            <a href="javascript:;" class="show_pass eye_close"></a>
+                        </div>
+                        <div class="forgot_pass">
+                            <a href="javascript:;">忘记密码</a>
+                        </div>
+                        <a href="javascript:;" class="btn_signin btn_gray">登录</a>
+                    </div>
+                </div>
+                <div class="signin_frame_bottom">
+                    <div class="signin_frame_bottom_cont">
+                        <a href="javascript:;">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/thirdplugins/jquery.min.js"></script>
+    <script src="script/thirdplugins/jquery.cookie.js"></script>
+    <script src="script/js/signin&signup.js"></script>
+</body>
+</html>

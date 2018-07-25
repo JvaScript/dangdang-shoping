@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+$wrap:1200px;
+// 顶部导航栏
+//1200px居中盒子
+.wrapper{
+    width:$wrap;
+    margin-left:auto;
+    margin-right:auto;
+}
+//清除浮动
+.clear::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+a{//去a标签默认样式
+    //display:block;
+    text-decoration: none;
+    color:#999;
+}
+li{
+    list-style: none;
+}
+%left{//左浮动
+    float:left;
+}
+%right{//右浮动
+    float:right;
+}
+
+
+.mod-nav{
+    font-family: 'Microsoft YaHei';
+}
+.nav{
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    height: 40px;
+    overflow: initial;
+}
+.all_type{
+    @extend %left;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    color: #fff;
+    margin-right: 30px;
+    .show_type_list{
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        width: 100%;
+        background: url(http://www.qiyipic.com/common/fix/h5_qiyiShop_img/nav_red_bg.png) no-repeat;
+        background-size: cover;
+        .typeL_icon{
+            width: 15px;
+            height: 13px;
+            display: inline-block;
+            background: url(http://www.qiyipic.com/common/fix/h5_qiyiShop_img/nav_meau_icon.png) no-repeat;
+            position: absolute;
+            top: 12.5px;
+            z-index: 100;
+            left: 14px;
+            cursor: pointer;
+        }
+        span{
+            display: inline-block;
+            color: #fff;
+            width: 190px;
+            height: 40px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: left;
+            position: absolute;
+            left: 37px;
+        }
+        .typeR_icon{
+            height: 0;
+            line-height: 0;
+            overflow: hidden;
+            border-width: 6px;
+            border-style: solid;
+            border-color: #fff transparent transparent;
+            position: absolute;
+            top: 18px;
+            right: 14px;
+        }
+    }
+}
+.all_type:hover .type_list_box{
+    display:block;
+}
+.type_list_box{
+    display:none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 100;
+    width: 299px;
+    height: 400px;
+    background: #fafafa;
+    opacity: .98;
+    font-size:12px;
+    li{
+        border-top: 1px solid #f2f2f2;
+        height: 67px;
+        margin-top: -1px;
+        overflow: hidden;
+        margin: 0 10px;
+        .type_title{
+            @extend %left;
+            margin: 13px 0;
+            width: 65px;
+            height: 42px;
+            border-right: 1px solid #ddd;
+            text-align: center;
+            font-family: '宋体';
+            color: #333;
+            line-height: 18px;
+            overflow: hidden;
+            .type_icon{
+                display: block;
+                width: 22px;
+                height: 24px;
+                margin: 0 auto;
+                background: url(http://pic3.qiyipic.com/common/20180119/icon_menu.png) no-repeat;
+            }
+            .type_icon_cam{
+                background-position: 0 0;
+            }
+            .type_icon_movie{
+                background-position: 0 -25px;
+            }
+            .type_icon_book{
+                background-position: 0 -50px;
+            }
+            .type_icon_drink{
+                background-position: 0 -75px;
+            }
+            .type_icon_home{
+                background-position: 0 -100px;
+            }
+            .type_icon_toy{
+                background-position: 0 -125px;
+            }
+        }
+    }
+    .type_item_box{
+        padding: 12px 15px;
+        overflow: hidden;
+        line-height: 21px;
+        word-break: break-all;
+        position: relative;
+        .type_item{
+            height: 42px;
+            overflow: hidden;
+            .item{
+                display: inline-block;
+                margin-right: 2px;
+                color: #666;
+                font-family: '宋体';
+            }
+            .item:hover{
+                color: #ee394b;
+            }
+        }
+    }
+}
+//导航栏中间
+.nav_box{
+    @extend %left;
+    width: 860px;
+    height: 40px;
+    .nav_active{//激活样式
+        border-bottom: 3px solid #cc0e2b;
+        font-weight: bold;
+    }
+    li{
+        display: inline-block;
+        //width:82px;
+        @extend %left;
+        position: relative;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 25px;
+        border-bottom: 3px solid transparent;
+        box-sizing: border-box;
+        a{
+            color:#fff;
+        }
+    }
+}
+//导航栏VIP提示框
+.showVip_box{
+    cursor: pointer;
+    width: 260px;
+    height: 76px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    z-index: 1000;
+    background: url(http://www.qiyipic.com/common/fix/0dce385c5917412a99cf983544d29afd.png) no-repeat;
+    background-size: 100%;
+    .showVip_title{
+        position: absolute;
+        color: #fff;
+        font-size: 11px;
+        top: 7px;
+        right: 30px;
+    }
+    .showVip_btn{
+        position: absolute;
+        color: #fff;
+        font-size: 11px;
+        top: 47px;
+        right: 65px;
+        cursor: pointer;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        padding: 5px 10px;
+        line-height: 11px;
+        box-sizing: border-box;
+    }
+}
